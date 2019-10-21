@@ -1,0 +1,6 @@
+rootProject.name = 'Reactive'
+include ':applications:app-service'
+findProject(':applications:app-service')?.name = 'midesatech-app-service'
+include 'infrastructure:entry-points:reactive-web'
+findProject('infrastructure:entry-points:reactive-web')?.name = 'midesatech-reactive-web'
+
